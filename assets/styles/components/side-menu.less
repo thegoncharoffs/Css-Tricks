@@ -1,0 +1,134 @@
+@import "../common/colors.less";
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    vertical-align: middle;
+    margin: 0;
+    padding: 1rem 0 0 0;
+    width: 100px;
+    list-style-type: none;
+    background-color: black;
+
+    &:hover .side-menu__text {
+        transform: translateX(0px);
+    }
+
+    &__item {
+        display: inline-block;
+        padding: 0.75rem 0.5rem;
+
+        &._selected {
+            background: white;
+        }
+
+        &._selected .side-menu__icon{
+            stroke: black;
+            stroke-width: 2;
+            fill: none;
+        }
+
+        &._selected .side-menu__text{
+            color: black;
+        }
+    }
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        color: white;
+
+        transition: 0.1s;
+
+        &:hover {
+            transform: translateY(3px);
+        }
+
+        &._home {
+            stroke: white;
+            stroke-width: 2;
+
+            &:hover .side-menu__icon {
+                stroke: @home;
+            }
+        }
+
+        &._videos {
+            stroke: white;
+            stroke-width: 2;
+
+            &:hover .side-menu__icon {
+                stroke: @videos;
+            }
+        }
+
+        &._almanac {
+            stroke: white;
+            stroke-width: 2;
+            &:hover .side-menu__icon {
+                stroke: @almanac;
+            }
+        }
+
+        &._gallery {
+            fill: white;
+            &:hover .side-menu__icon {
+                fill: @gallery;
+            }
+        }
+
+        &._snippets {
+            fill: white;
+            &:hover .side-menu__icon {
+                fill: @snippets;
+            }
+        }
+
+        &._forums {
+            fill: white;
+            &:hover .side-menu__icon {
+                fill: @forums;
+            }
+        }
+
+        &._newsletter {
+            fill: white;
+            &:hover .side-menu__icon {
+                fill: @newsletter;
+            }
+        }
+
+        &._jobs {
+            fill: white;
+            &:hover .side-menu__icon {
+                fill: @jobs;
+            }
+        }
+
+        &._guides {
+            stroke: white;
+            stroke-width: 2;
+            &:hover .side-menu__icon {
+                stroke: @guides;
+            }
+        }
+    }
+
+    &__icon {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 0 auto 0.1rem;
+    }
+
+    &__text {
+        transform: translateX(-300px);
+        transition: 0.1s;
+
+        font-weight: 500;
+        font-size: 0.66rem;
+        letter-spacing: 0.04rem;
+        color: white;
+        text-align: center;
+    }
+}

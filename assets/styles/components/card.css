@@ -1,0 +1,11 @@
+.card {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+}
+.card__wrapper {
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=card.css.map */

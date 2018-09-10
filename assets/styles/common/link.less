@@ -1,0 +1,109 @@
+@import "colors.less";
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+
+    //type
+    &._ordinary {
+        color: #222;
+
+        &:hover {
+            color: #03a9f4;
+        }
+    }
+
+    &._secondary {
+        color: #03a9f4;
+
+        &:hover {
+            color: #222;
+        }
+    }
+
+    &._card-link {
+        color: #222;
+        font-size: 2.6rem;
+
+        &:hover {
+            color: #03a9f4;
+        }
+    }
+
+    &._text-link {
+        color: #555;
+        font-weight: bold;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    &._list-link {
+        color: #272727;
+        font-size: 0.8rem;
+
+        &:hover strong{
+            border-bottom: 2px solid #c5ecfe;
+        }
+    }
+
+
+
+    &._footer-link {
+        font-size: 1.6rem;
+        color: @dark-grey;
+        flex: 30%;
+
+        &:hover {
+            font-weight: bold;
+            color: black;
+        }
+    }
+
+    &._uppercase {
+        text-transform: uppercase;
+    }
+
+    //sizes
+    //&._size-s {
+    //    font-weight: 300;
+    //}
+
+    &._size-m {
+        font-size: 0.7rem;
+    }
+
+    //&._size-l {
+    //    font-weight: 500;
+    //}
+
+    &._size-xl {
+        font-size: 2.6rem;
+    }
+
+    //&._size-xxl {
+    //    font-weight: 700;
+    //}
+
+    //weights
+    &._weight-s {
+        font-weight: 300;
+    }
+
+    &._weight-m {
+        font-weight: 400;
+    }
+
+    &._weight-l {
+        font-weight: 500;
+    }
+
+    &._weight-xl {
+        font-weight: 600;
+    }
+
+    &._weight-xxl {
+        font-weight: 700;
+    }
+}

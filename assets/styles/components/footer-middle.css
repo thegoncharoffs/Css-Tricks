@@ -1,0 +1,21 @@
+.footer-middle {
+  display: flex;
+  width: 100%;
+}
+.footer-middle__section-1 {
+  width: 100px;
+  background: #111111;
+}
+.footer-middle__section-2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  padding: 2rem;
+  background: #000000;
+}
+.footer-middle__section-3 {
+  width: calc(300px + 2rem);
+  background: #252525;
+}
+/*# sourceMappingURL=footer-middle.css.map */

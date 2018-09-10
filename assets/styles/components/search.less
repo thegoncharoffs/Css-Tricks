@@ -1,0 +1,33 @@
+.search {
+    flex: 0 0 calc(300px + 2rem);
+    padding-right: 1rem;
+    display: block;
+
+    &__form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__input {
+        width: 100%;
+        outline: 0;
+        border: 1px solid #ccc;
+        padding: 5px;
+        border-radius: 2px;
+        min-width: 100px;
+        font-size: 1rem;
+
+        &::placeholder {
+            font-size: 1rem;
+        }
+    }
+
+    &__icon-search {
+        display: block;
+        width: 22px;
+        height: 22px;
+        fill: white;
+        margin: 0 auto;
+    }
+}

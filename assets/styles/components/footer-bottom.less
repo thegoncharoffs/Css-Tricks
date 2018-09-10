@@ -1,0 +1,82 @@
+@import "../common/colors.less";
+
+.footer-bottom {
+    display: flex;
+    width: 100%;
+    border-bottom: 5px solid @orange;
+
+    &__section-1 {
+        width: 100px;
+        background: @footer-bottom-section-1;
+        background-image: url("../../../assets/images/backgrounds/background-footer.svg");
+
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__section-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background: @footer-bottom-section-2-top;
+        flex: 1;
+    }
+
+    &__section-3 {
+        width: calc(300px + 2rem);
+        padding: 2rem;
+        background: @footer-bottom-section-3;
+        font-size: 0.8rem;
+    }
+
+    &__logo-star {
+        display: block;
+        width: 100%;
+        height: 100px;
+        fill: @orange;
+        background: black;
+        padding: 1rem;
+    }
+
+    &__section-2-top {
+        background: @footer-bottom-section-2-top;
+        padding: 2rem;
+    }
+
+    &__text {
+        color: @grey;
+        font-size: 0.9rem;
+    }
+
+    &__text-attachment {
+        max-width: 800px;
+        font-size: 0.7rem;
+
+        color: @dark-grey;
+    }
+
+    &__section-2-bottom {
+        background: @footer-bottom-section-2-bottom;
+        padding: 2rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 1;
+     }
+
+    &__title {
+        line-height: 1.05;
+        margin: 0 0 0.8rem 0;
+    }
+
+    &__job-list {
+        margin: 1rem 0 1.5rem 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__button-wrap {
+        line-height: 3;
+    }
+}

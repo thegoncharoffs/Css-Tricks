@@ -1,0 +1,39 @@
+@import "../common/colors.less";
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 8px solid @header-line;
+
+    &__logo {
+        width: 100px;
+        display: block;
+    }
+
+    &__logo-star {
+        display: block;
+        width: 35px;
+        height: 35px;
+        margin: 0 auto;
+        fill: @logo-fill;
+    }
+
+    &__middle-area {
+        flex: 1;
+        display: block;
+    }
+
+    &__css-tricks {
+        width: 237.5px;
+        height: 30px;
+    }
+
+    &__logo-text {
+        display: block;
+        width: 237.5px;
+        height: 30px;
+    }
+}

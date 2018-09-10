@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 100px;
+}
+.header__star-logo-svg {
+  width: 35px;
+  height: 35px;
+  margin: 0 auto;
+  fill: #ccc;
+}
+.header__middle-area {
+  flex: 1;
+}
+.header__text-logo-svg {
+  width: 237.5px;
+  height: 30px;
+}
+/*# sourceMappingURL=header.css.map */
